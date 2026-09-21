@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Basics</title>
+
+  <style>
+      .hidden {
+        display: none;
+      }
+      
+  </style>
+</head>
+
+<body>
+
+    <!-- Click Counter -->
+    <section>
+        <h2>Click Counter</h2>
+
+        <button id="counterButton">Click Me</button>
+
+        <p>Count: <span id="counter">0</span></p>
+    </section>
+
+
+    <!-- Text Toggler -->
+    <section>
+        <h2>Text Toggler</h2>
+
+        <button id="toggleButton">Reveal text</button>
+
+        <p id="toggleText" class="hidden">
+            This is a hidden secret!
+        </p>
+    </section>
+
+
+    <!-- Live Input Echo -->
+    <section>
+        <h2>Live Input Echo</h2>
+
+        <input type="text" id="inputEcho">
+
+        <p id="outputEcho"></p>
+    </section>
+
+
+    <!-- Dynamic List -->
+    <section>
+        <h2>Dynamic List</h2>
+
+        <input type="text" id="listInput">
+
+        <button id="addButton">Add</button>
+
+        <ul id="listItem">
+            <li>Existing item</li>
+        </ul>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
