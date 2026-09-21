@@ -7,10 +7,42 @@
     <title>DOM Basics</title>
 
   <style>
-      .hidden {
-        display: none;
-      }
+  
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: #22303f;
+      background: #FFFEEB;
+      line-height: 1.6;
+    }
+    
+    section h2 {
+      color: #6F1E9E;
+      border-bottom: 2px solid #e0e6ee;
+      padding-bottom: 0.4rem;
+    }
       
+    .hidden {
+        display: none;
+    }
+      
+    button,
+    input {
+        padding: 6px;
+        margin: 10px;
+        box-sizing: border-box;
+        border: 2px solid #6f1e9e;
+        border-radius: 8px;
+        text-align: LEFT;
+    }
+    
+    .echoOutputStyle {
+        color: #000;
+        font-family: "lucida handwriting";
+    }
+        
   </style>
 </head>
 
@@ -19,10 +51,19 @@
     <!-- Click Counter -->
     <section>
         <h2>Click Counter</h2>
+        
+        <p>How many clicks can you get?</p>
 
         <button id="counterButton">Click Me</button>
 
-        <p>Count: <span id="counter">0</span></p>
+        <p>Clicks: <span id="counter">0</span></p>
+            <p id="toggle10" class="hidden"> 10 clicks? Amazing!</p>
+            <p id="toggle15" class="hidden"> 15!</p>
+            <p id="toggle24" class="hidden"> Keep going!</p>
+            <p id="toggle35" class="hidden"> 35!</p>
+            <div id="encourage"></div>
+        
+        
     </section>
 
 
@@ -44,7 +85,7 @@
 
         <input type="text" id="inputEcho">
 
-        <p id="outputEcho"></p>
+        <p class ="echoOutputStyle" id="outputEcho"></p>
     </section>
 
 
@@ -57,7 +98,7 @@
         <button id="addButton">Add</button>
 
         <ul id="listItem">
-            <li>List items</li>
+            <li>Existing item</li>
         </ul>
     </section>
 
