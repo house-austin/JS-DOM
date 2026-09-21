@@ -4,9 +4,10 @@ const toggleButton = document.querySelector("#toggleButton");
 const toggleText = document.querySelector("#toggleText");
 const inputEcho = document.querySelector("#inputEcho");
 const outputEcho = document.querySelector("#outputEcho");
-const listInput = document.querySelector("#itemList")
-const listButton document.querySelector("#addButton")
-const listItem document.createElement("li")
+const listInput = document.querySelector("#listInput");
+const listButton = document.querySelector("#addButton");
+const listItem = document.querySelector("#listItem");
+
 
 
 let count = 0;
@@ -24,3 +25,8 @@ inputEcho.addEventListener("input", function() {
     outputEcho.textContent = inputEcho.value;
 })
 
+listButton.addEventListener("click", function() {
+    const newItem = document.createElement("li");
+    newItem.textContent = listInput.value;
+    listItem.appendChild(newItem);
+})
